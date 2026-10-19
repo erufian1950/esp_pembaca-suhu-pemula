@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Erfyan Saputra",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 48,
+      "left": 120.04,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 0.3,
+      "left": 4.2,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["esp:TX", "$serialMonitor:RX", "", []],
+    ["esp:RX", "$serialMonitor:TX", "", []],
+    ["esp:3V3", "dht1:VCC", "red", ["h0"]],
+    ["dht1:GND", "esp:GND.1", "black", ["v0"]],
+    ["esp:15", "dht1:SDA", "green", ["v0"]]
+  ],
+  "dependencies": {}
+}
