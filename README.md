@@ -10,8 +10,3 @@ Sensor DHT22 -> ESP32 -> MQTT -> klien web
 2. Jalankan simulasi
 3. Subscribe ke topik di klien MQTT
 
-## Hasil
-(tambahkan tangkapan layar)
-
-## Rencana berikutnya
-Broker lokal dengan TLS, Grafana, dan alert Telegram.
